@@ -16,6 +16,7 @@ driver.get(URL)
 driver.maximize_window()
 WebDriverWait(driver,10).until(EC.presence_of_element_located((By.ID,"file-upload")))
 
+
 dosya_sec=driver.find_element(By.ID,'file-upload')
 file_path=r"C:\Users\ondre\Downloads\qq.PNG" # r: rawstring
 dosya_sec.send_keys(file_path)
